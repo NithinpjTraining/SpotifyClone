@@ -1,5 +1,5 @@
   
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './Footer.css';
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
@@ -13,22 +13,6 @@ import { Grid, Slider } from "@material-ui/core";
 import { useDataLayerValue } from "./DataLayer";
 function Footer({ spotify }) {
     const [{ token, item, playing }, dispatch] = useDataLayerValue();
-useEffect(() => {
-    spotify.getMyCurrentPlayingTrack().then((r) => {
-      console.log(r);
-
-      dispatch({
-        type: "SET_PLAYING",
-        playing: r.is_playing,
-      });
-
-      dispatch({
-        type: "SET_ITEM",
-        item: r.item,
-      });
-    });
-  }, [spotify]);
-
   const handlePlayPause = () => {
     if (playing) {
       spotify.pause();
