@@ -13,21 +13,21 @@ import { Grid, Slider } from "@material-ui/core";
 import { useDataLayerValue } from "./DataLayer";
 function Footer({ spotify }) {
     const [{ token, item, playing }, dispatch] = useDataLayerValue();
-useEffect(() => {
-    spotify.getMyCurrentPlaybackState().then((r) => {
-      console.log(r);
+// useEffect(() => {
+//     spotify.getMyCurrentPlaybackState().then((r) => {
+//       console.log(r);
 
-      dispatch({
-        type: "SET_PLAYING",
-        playing: r.is_playing,
-      });
+//       dispatch({
+//         type: "SET_PLAYING",
+//         playing: r.is_playing,
+//       });
 
-      dispatch({
-        type: "SET_ITEM",
-        item: r.item,
-      });
-    });
-  }, [spotify]);
+//       dispatch({
+//         type: "SET_ITEM",
+//         item: r.item,
+//       });
+//     });
+//   }, [spotify]);
 
   const handlePlayPause = () => {
     if (playing) {
