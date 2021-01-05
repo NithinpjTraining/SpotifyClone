@@ -1,7 +1,7 @@
 //documentation/web-playback-sdk/quick-start/#
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000/#access_token=BQAYjwJz-qlC-baMkMpoEal8m05ECLZP-fzRo64D2-2gzSe6BMcRCBlcIGwi-hI2z-KMvT0zse2e8D8W8XCmxIn_jB2sDZTGHAT4JlyuKAtk5-fVoFR9N0hb7K20yqpZ88JI6yqZNqlX9Fyfsi2dEalufWDLsGAAX3IuT4yw4NRqQIgaxm9o&token_type=Bearer&expires_in=3600";
+const redirectUri = "http://localhost:3000/";
 const clientId = "6d1daa6366534698b782ae9200cae412";
 const scopes =[
     "user-read-currently-playing",
