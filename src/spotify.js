@@ -1,7 +1,7 @@
 //documentation/web-playback-sdk/quick-start/#
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://nithinspotify.herokuapp.com/";
 const clientId = "7fbc8a3126ba4d7caa23447eb3bef9fd";
 const scopes =[
     "user-read-currently-playing",
