@@ -26,7 +26,7 @@ function Sidebar() {
           <SidebarOption title={playlist.name} />
 
         ))}
-        <SidebarOption title="BE"></SidebarOption>
+        <SidebarOption title="Top"></SidebarOption>
         <SidebarOption title="Life Goes On"></SidebarOption>
         <SidebarOption title="Map of Soul"></SidebarOption>
         <SidebarOption title="Believer"></SidebarOption>

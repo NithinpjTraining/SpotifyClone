@@ -1,8 +1,8 @@
 //documentation/web-playback-sdk/quick-start/#
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "https://spotify-clones.herokuapp.com/";
-const clientId = "6d1daa6366534698b782ae9200cae412";
+const redirectUri = "http://localhost:3000/";
+const clientId = "7fbc8a3126ba4d7caa23447eb3bef9fd";
 const scopes =[
     "user-read-currently-playing",
     "user-read-recently-played",
